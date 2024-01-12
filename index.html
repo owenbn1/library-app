@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  </head>
+  <body class="container">
+    <h2 class="text-center">Library App</h2>
+
+    <div id="new-book">
+      <div class="container">
+        <h4>ADD BOOK</h4>
+        <div class="row">
+          <div class="col">
+            <label for="newBookName">Book Name:</label>
+            <input type="text" id="newBookName" class="form-control" placeholder="Moby Dick" />
+          </div>
+          <div class="col">
+            <label for="newAuthorName">Author Name:</label>
+            <input type="text" id="newAuthorName" class="form-control" placeholder="Herman Melville" />
+          </div>
+          <div>
+            <button class="btn btn-primary form-control" id="submitBook">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="update-book">
+        <div class="container">
+          <h4>UPDATE BOOK</h4>
+          <div class="row">
+            <div class="col">
+              <label for="updateBookName">Book Name:</label>
+              <input type="text" id="updateBookName" class="form-control" />
+            </div>
+            <div class="col">
+              <label for="updateAuthorName">Author Name:</label>
+              <input type="text" id="updateAuthorName" class="form-control" />
+            </div>
+            <div class="col">
+              <label for="updateBookId">Book ID:</label>
+              <input type="text" id="updateBookId" class="form-control" />
+            </div>
+            <div>
+              <button id="updateBook" class="btn btn-primary form-control">UPDATE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div>
+        <table class="table table-striped table-hover table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">ID#</th>
+                    <th scope="col">BOOK</th>
+                    <th scope="col">AUTHOR</th>
+                    <th scope="col">DELETE</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+      </div>
+      <div id="app">
+      </div>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="index.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+  </html>

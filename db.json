@@ -1,0 +1,19 @@
+{
+  "books": [
+    {
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "id": 1
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "id": 2
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "id": 3
+    }
+  ]
+}
